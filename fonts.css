@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Happy Monkey;
+    src: url("./Fonts/Happy_Monkey/HappyMonkey-Regular.ttf");
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("./Fonts/Poppins/Poppins-Regular.ttf");
+
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("./Fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: RobotoThin;
+    src: url("./Fonts/Roboto/Roboto-ThinItalic.ttf");
+}

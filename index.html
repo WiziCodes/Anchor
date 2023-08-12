@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchor</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="AOS/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="Icons/favicon.ico" type="image/x-icon">
+    <script src="index.js" defer></script>
+    <script src="search.js" defer></script>
+    <script src="AOS/aos.js"></script>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="movieTitle">
+            <h1>Anchor</h1>
+        </div>
+        <div class="searchCont">
+            <input type="text" onkeyup="searchMovies()" type="text" name="search" class="searchBar" id="searchBar"
+                placeholder="Search movies here">
+            <img src="Icons/magnifying-glass-solid.svg" width="15px">
+        </div>
+        <div class="socials">
+            <a href="https://wa.me/07057469574"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100085457723082"><i
+                    class="fa-brands fa-facebook-f"></i></a>
+            <a href="http://instagram.com/wizixp/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </nav>
+    <nav class="sideBar" style="width: 60px;">
+        <ul class="navItems">
+            <a href="http://127.0.0.1:5502/index.html">
+                <li><i class="fa-solid fa-house"></i>Home</li>
+            </a>
+            <hr>
+            <a href="#Recents">
+                <li><i class="fa-solid fa-newspaper"></i>Recents</li>
+            </a>
+            <hr>
+            <a href="#Trending">
+                <li><i class="fa-solid fa-chart-simple"></i>Trending</li>
+            </a>
+            <hr>
+            <a href="#Discover">
+                <li><i class="fa-solid fa-map"></i>Discover</li>
+            </a>
+
+
+        </ul>
+    </nav>
+    <nav class="phonesideBar">
+        <ul class="phonenavItems">
+            <a href="#">
+                <li><i class="fa-solid fa-house"></i>Home</li>
+            </a>
+            <a href="#Recents">
+                <li><i class="fa-solid fa-newspaper"></i>Recents</li>
+            </a>
+            <a href="#Trending">
+                <li><i class="fa-solid fa-chart-simple"></i>Trending</li>
+            </a>
+            <a href="#Discover">
+                <li><i class="fa-solid fa-map"></i>Discover</li>
+            </a>
+        </ul>
+    </nav>
+    <div class="displayCont" id="disp">
+        <div class="slideShow fade" id="slideShow"
+            style="background-image: url(LandingPage/wp12639192-oppenheimer-4k-wallpapers.jpg);">
+            <div class="descriptionCont">
+                <div class="descriptionTextCont">
+                    <span class="spotlight">#1 SPOTLIGHT</span>
+                    <h1 class="title"> Oppenheimer (2023)</h1>
+                    <a href="#"><button>Coming Soon</button></a>
+                    <a href="https://www.imdb.com/title/tt15398776/?ref_=ttls_li_tt" target="_blank"><button>Know
+                            More</button></a>
+                </div>
+            </div>
+            <img src="LandingPage/wp12552484-oppenheimer-movie-wallpapers.jpg">
+        </div>
+        <div class="slideShow fade" id="slideShow"
+            style="background-image: url(LandingPage/wp10370938-spider-man-across-the-spider-verse-hd-wallpapers.jpg);">
+            <div class="descriptionCont">
+                <div class="descriptionTextCont">
+                    <span class="spotlight">#2 SPOTLIGHT</span>
+                    <h1 class="title">Spider-Man: Across the Spider-Verse</h1>
+                    <a
+                        href="https://www.sabishare.com/file/GzgHZPREv42-spider-man-across-the-spider-verse-2023-netnaija-com-mkv"><button>View</button></a>
+                    <a href="https://www.imdb.com/title/tt9362722/?ref_=ttls_li_tt"><button>Know More</button></a>
+                </div>
+            </div>
+            <img src="LandingPage/wp11834761-spider-man-across-the-spider-verse-hd-wallpapers.jpg">
+            <a href="#"><button>View</button></a>
+        </div>
+        <div class="slideShow fade" id="slideShow"
+            style="background-image: url(LandingPage/wp12527091-mission-impossible-dead-reckoning-part-one-wallpapers.jpg);">
+            <div class="descriptionCont">
+                <div class="descriptionTextCont">
+                    <span class="spotlight">#3 SPOTLIGHT</span>
+                    <h1 class="title"> Mission: Impossible - Dead Reckoning Part One</h1>
+                    <a href="#"><button>Coming Soon</button></a>
+                    <a href="https://www.imdb.com/title/tt9603212/?ref_=ttls_li_tt"><button>Know More</button></a>
+                </div>
+            </div>
+            <img src="LandingPage/wp12527093-mission-impossible-dead-reckoning-part-one-wallpapers.jpg">
+        </div>
+
+    </div>
+    <main class="content">
+        <div class="searchStatus" style="display: none;">
+            <h1>"No search result"</h1>
+        </div>
+        <div class="backCont" style="display: none;">
+            <a href="http://127.0.0.1:5502/index.html"><button>
+                    < </button></a>
+        </div>
+        <div class="movieCont"> <!--RECENT MOVIES-->
+            <div class="space" id="Recents">
+            </div> <!--//do not 4get-->
+            <div class="movieClassCont" id="movieClassCont">
+                <i class="fa-solid fa-newspaper" style="color: orangered; font-size: 25px;"></i>
+                <h2 class="movieClass">Recents</h2>
+                <h3 class="ScrollText">Swipe < </h3>
+            </div>
+            <div class="movieWrapper">
+                <ol id="recents">
+
+                </ol>
+            </div>
+        </div>
+        <div class="movieCont"> <!--Trending MOVIES-->
+            <div class="space " id="Trending">
+            </div><!--//do not 4get-->
+            <div class="movieClassCont">
+                <i class="fa-solid fa-chart-simple" style="color: orangered; font-size: 25px;"></i>
+                <h2 class="movieClass">Trending</h2>
+                <h3 class="ScrollText">Swipe < </h3>
+            </div>
+            <div class="movieWrapper">
+                <ol id="trending">
+                </ol>
+            </div>
+        </div>
+        <div class="movieCont" > <!--Explore-->
+            <div class="space " id="Discover">
+            </div><!--//do not 4get-->
+            <div class="movieClassCont">
+                <i class="fa-solid fa-map" style="color: orangered; font-size: 25px;"></i>
+                <h2 class="movieClass">Discover</h2>
+                <h3 class="ScrollText">Swipe < </h3>
+            </div>
+            <div class="movieWrapper">
+                <ol id="discover">
+
+                </ol>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us">
+                <h2>About us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Et, eum, architecto hic fugiat numquam quam nulla
+                    illo aspernatur sequi quisquam tempora.
+                    Minus dolores corporis dolore quae error, aliquam deserunt unde?</p>
+            </div>
+            <div class="newsletter">
+                <h2>Newsletter</h2>
+                <p>Stay Updated</p>
+                <div class="newsletterForm">
+                    <div class="form">
+                        <input type="email" placeholder="Email">
+                        <button class="formBtn">></button>
+                    </div>
+                </div>
+            </div>
+            <div class="follow">
+                <h2>Follow us</h2>
+                <p>Our social media handle</p>
+                <div class="followSocials">
+                    <div class="socials text">
+                        <a href="https://wa.me/07057469574"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100085457723082"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="http://instagram.com/wizixp/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Anchor © 2023 WiziCodes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
